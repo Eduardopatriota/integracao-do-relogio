@@ -6,13 +6,7 @@ let img = window.document.getElementById('imagem')
 let data = new Date()
 let hora = data.getHours()
 let min = data.getMinutes()
-let mensagem  
-//let mensagem = window.document.getElementById('mensagem')
-
-
-msg.innerHTML = `Agora são ${hora} horas e ${min} min.
-<br> ${mensagem}`
-
+let mensagem   
 
     if (hora >= 5 && hora < 12){
         img.src = 'img/foto_manha.png'
@@ -33,5 +27,6 @@ msg.innerHTML = `Agora são ${hora} horas e ${min} min.
         mensagem = 'boa noite'
     }
 
+msg.innerHTML = `Agora são ${hora} horas e ${min} min. <br> ${mensagem}`
 
 }
